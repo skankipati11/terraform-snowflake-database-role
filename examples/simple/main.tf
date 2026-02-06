@@ -10,6 +10,8 @@ resource "snowflake_schema" "this" {
 module "snowflake_database_role" {
   source = "../../"
 
+  snowflake_private_key = var.snowflake_private_key
+
   database_name = snowflake_database.this.name
   name          = "TEST_DB_ROLE"
 

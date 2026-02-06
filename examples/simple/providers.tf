@@ -1,7 +1,7 @@
 provider "snowflake" {
 
-  organization_name = "xodjopc"
-  account_name      = "jtc04659"
+  organization_name = "rcywnut"
+  account_name      = "dz50135"
   user              = "SKANKIPATI"
   role              = "ACCOUNTADMIN"
   authenticator     = "SNOWFLAKE_JWT"

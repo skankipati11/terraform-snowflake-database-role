@@ -79,6 +79,8 @@ module "snowflake_database_role_1" {
   database_name = snowflake_database.this.name
   name          = "TEST_DB_ROLE_1"
 
+  snowflake_private_key = var.snowflake_private_key
+
   granted_to_roles = [
     snowflake_account_role.role_1.name,
     snowflake_account_role.role_2.name

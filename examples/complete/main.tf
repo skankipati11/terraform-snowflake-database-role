@@ -138,6 +138,8 @@ module "snowflake_database_role_1" {
 module "snowflake_database_role_2" {
   source = "../../"
 
+  snowflake_private_key = var.snowflake_private_key
+
   database_name = snowflake_database.this.name
   name          = "TEST_DB_ROLE_2"
   name_scheme = {
@@ -154,6 +156,8 @@ module "snowflake_database_role_2" {
 
 module "snowflake_database_role_3" {
   source = "../../"
+
+  snowflake_private_key = var.snowflake_private_key
 
   database_name = snowflake_database.this.name
   name          = "test_db_role_3"

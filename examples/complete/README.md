@@ -1,4 +1,4 @@
-# Complete Examples
+# Complete Exampless
 
 ```terraform
 resource "snowflake_database" "this" {
